@@ -24,5 +24,5 @@ DASH=$(echo "${CAMEL}" | ${SED} -E 's/([A-Za-z0-9])([A-Z])/\1-\2/g' | tr '[:uppe
 # TODO: Uncomment the next line after initializing a concrete skeleton project.
 #rm init-project.sh sync-project.sh
 # shellcheck disable=SC2016
-${FIND} . -type f -regextype posix-extended ! -regex '^.*/(\.git|\.idea)/.*$' -exec sh -c '${1} -i -e "s/SkeletonBase/${2}/g" -e "s/skeleton-base/${3}/g" ${4}' '_' "${SED}" "${CAMEL}" "${DASH}" '{}' \;
+${FIND} . -type f -regextype posix-extended ! -regex '^.*/(\.git|\.idea)/.*$' -exec sh -c '${1} -i -e "s/SkeletonBase/${2}/g" -e "s/skeleton-base/${3}/g" "${4}"' '_' "${SED}" "${CAMEL}" "${DASH}" '{}' \;
 echo "Done. Files were edited and moved. Review those changes."

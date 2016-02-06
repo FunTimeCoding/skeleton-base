@@ -1,4 +1,3 @@
 #!/bin/sh -e
 
-# TODO: Implement this script.
-exit 1
+rm -rf build

@@ -21,6 +21,12 @@ Install develoment tools.
 # TODO: Explain how to install tools required for the development of this project.
 ```
 
+Run style check and show all concerns.
+
+```sh
+./run-style-check.sh
+```
+
 Build the project like Jenkins.
 
 ```sh
